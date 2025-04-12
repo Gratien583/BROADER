@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { View, StyleSheet, Text, TouchableOpacity, Alert } from "react-native";
 import RNPickerSelect from "react-native-picker-select";
 import moment from "moment";
-import { useRoute } from "@react-navigation/native";
+import { useRoute, useNavigation } from "@react-navigation/native";
 import { supabase } from "../supabaseClient";
 import AnalogClockInput from "./AnalogClockInput";
 
@@ -21,6 +21,7 @@ const timeOptions = generateTimeOptions();
 
 const ScheduleDetail = () => {
   const route = useRoute();
+  const navigation = useNavigation();
   const { date: selectedDate, userId } = route.params || {}; // Calendar から受け取る
 
   const [startTime, setStartTime] = useState<string | null>(null);
@@ -65,6 +66,7 @@ const ScheduleDetail = () => {
       } else {
         Alert.alert("成功", "予定が保存されました！");
         console.log("Supabaseに保存されました:", noteData);
+        navigation.goBack();
       }
     } catch (err) {
       console.error("保存中にエラーが発生しました:", err);
