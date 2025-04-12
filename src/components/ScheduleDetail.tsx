@@ -91,63 +91,63 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 30,
-    backgroundColor: "#f8f9fa", // 背景色を柔らかいグレーに変更
-    justifyContent: "center", // コンテンツを中央寄せ
+    backgroundColor: "#f8f9fa",
+    justifyContent: "center",
   },
   title: {
-    fontSize: 26, // タイトルの文字サイズを大きく
+    fontSize: 26,
     fontWeight: "bold",
-    marginBottom: 20, // 余白を調整
-    color: "#333", // 文字色をダークグレーに
-    textAlign: "center", // 中央寄せ
+    marginBottom: 20,
+    color: "#333",
+    textAlign: "center",
   },
   text: {
-    fontSize: 18, // テキストの文字サイズを大きく
-    color: "#555", // 文字色をグレーに
-    marginBottom: 30, // 余白を調整
-    textAlign: "center", // 中央寄せ
+    fontSize: 18,
+    color: "#555",
+    marginBottom: 30,
+    textAlign: "center",
   },
   saveButton: {
     backgroundColor: "#00adf5",
-    padding: 15, // ボタンのパディングを大きく
-    borderRadius: 10, // 角を丸く
-    marginTop: 30, // ボタンの位置を上に
+    padding: 15,
+    borderRadius: 10,
+    marginTop: 30,
     alignItems: "center",
-    width: "100%", // ボタンの幅を画面いっぱいに
-    shadowColor: "#000", // シャドウを追加
+    width: "100%",
+    shadowColor: "#000",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     shadowRadius: 4,
-    elevation: 5, // Android用のシャドウ
+    elevation: 5,
   },
   saveButtonText: {
     color: "#fff",
     fontWeight: "bold",
-    fontSize: 18, // ボタンの文字サイズを大きく
+    fontSize: 18,
     margin: 4,
   },
 });
 
 const pickerStyles = {
   inputIOS: {
-    height: 60, // 高さを大きく
-    padding: 15, // パディングを大きく
+    height: 60,
+    padding: 15,
     borderWidth: 1,
-    borderColor: "#ccc", // ボーダー色を薄く
-    borderRadius: 8, // 角を少し丸く
-    color: "#333", // 文字色をダークグレーに
+    borderColor: "#ccc",
+    borderRadius: 8,
+    color: "#333",
     marginBottom: 20,
-    fontSize: 16, // 文字サイズを大きく
+    fontSize: 16,
   },
   inputAndroid: {
-    height: 60, // 高さを大きく
-    padding: 15, // パディングを大きく
+    height: 60,
+    padding: 15,
     borderWidth: 1,
-    borderColor: "#ccc", // ボーダー色を薄く
-    borderRadius: 8, // 角を少し丸く
-    color: "#333", // 文字色をダークグレーに
+    borderColor: "#ccc",
+    borderRadius: 8,
+    color: "#333",
     marginBottom: 20,
-    fontSize: 16, // 文字サイズを大きく
+    fontSize: 16,
   },
 };
 
